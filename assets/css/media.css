@@ -1,0 +1,389 @@
+/* Some delicious fonts */
+@import url(http://fonts.googleapis.com/css?family=Kreon|Open+Sans:300italic,400italic,600italic,400,300,600);
+
+/* Some tasty symbol fonts (thanks www.symbolset.com) */
+@import url(../webfonts/ss-social.css);
+@import url(../webfonts/ss-standard.css);
+
+@font-size: 16;
+@em: @font-size*1em; {
+	
+}
+@media screen and (max-width: 86em) {
+	.title {
+		font-size: 2.5em;
+	}
+}
+
+
+@media screen and (max-width: 75em) {
+	#nav {
+		width: 90%;
+	}	
+	#navleft {
+		width: 50%;
+	}
+	#navright {
+		width: 50%;
+	}
+	.content {
+		width: 90%;
+		max-width: 90%;
+	}
+	.title {
+		font-size: 2.2em;
+	}
+}
+
+
+@media screen and (max-width: 66em) {
+	
+	.ch-recent {
+		float: left;
+		min-width: 100%;
+		overflow: hidden;
+		max-height: 3em;
+		margin: auto;
+		padding: 0;
+	}
+	.ch-recent::after {
+		clear: both;
+	}
+	.ch-recent h4 {
+		line-height: 1em;
+	}
+	.ch-recent img{
+		display: none;
+	}
+
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  .ch-item .ch-info {
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);     
+  }
+}
+
+@media screen and (max-width: 56em) {
+	.title {
+		font-size: 2.2em;
+	}
+}
+
+@media screen and (max-width: 48em) { /*720px*/
+	body {
+		margin: 0 0 6.25em;
+	}
+	#container {
+		margin-bottom: 6.25em !important;
+	}
+	#header {
+		width: none;
+		max-width: 700px;
+		height: 150px;
+	}
+	#nav {
+		width: 100%;
+		height: 150px;
+	}
+	#navleft {
+		width: 100%;
+		float: left;
+		text-align: center;
+		overflow: hidden;
+	}
+	#navright {
+		width: 100%;
+		clear: left;
+		float: left;
+		text-align: center;
+		line-height: 50px;
+		border-bottom: 1px solid #ddd;	
+	}
+	#navright ul{
+		 float: left;
+		 padding: 0;
+		 width: 100%;
+	}
+	#navright li{
+		width: 33.333333%;
+		min-width: 33.333333%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+	#navright li a{
+		text-align: center;
+		width: 100%;
+	}
+	.content {
+		width: 90%;
+	}
+	.title {
+		font-size: 2em;
+	}
+	#slidespace {
+		width: 100%;
+		height: 400px;
+	}
+	#slidespace img{
+		clear: both;
+		min-height: 400px;
+		min-width: 1396px;
+		margin: -200px 0 0 -698px;
+	}
+	.playvideo {
+		top: 200px;
+	}
+	#slidespace h3 {
+		top: 75px;
+	}
+	
+	input {
+		width: 100%;
+	}
+	
+	#newspaper {
+		-moz-column-count:2; /* Firefox */
+		-webkit-column-count:2; /* Safari and Chrome */
+		column-count:2;
+		-moz-column-gap:25px; /* Firefox */
+		-webkit-column-gap:25px; /* Safari and Chrome */
+		column-gap:25px;
+		font-size: 0.75em;
+	}
+	
+	.homeinfo {
+		width: 100%;
+		margin: 0;
+		margin-bottom: 1.875em;
+	}
+	.portfolio-images {
+		width: 55%;
+	}
+	.portfolio-info {
+		width: 35%;
+		padding: 2.5%;	
+	}
+	.ch-item .ch-info {
+	    opacity: 0;
+	    transform: scale(1);
+	    -webkit-transform: scale(1);
+	    -moz-transform: scale(1);     
+	}
+	input {
+		width: 100%;
+		height: 50px;
+		padding: 20px 0px 20px 10px;
+		margin: 0;
+	}
+	input[type="email"] {
+		margin: 0;
+	}
+	
+	footer {
+		height: auto;
+	}
+	
+	#footer-left {
+		width: 100%;
+		text-align: center;
+		line-height: 20px;
+		padding-top: 10px;
+	}
+	
+	#footer-right {
+		width: 100%;
+		text-align: center;
+		clear: left;
+	}
+
+	.behance-container {
+   	margin-bottom: 7em;
+   }
+   
+/*   .last {
+   	margin-bottom: 8em !important;
+   }
+   */
+   .team-card {
+   	width: 45%;
+   	margin: 0 2.5%;
+   }
+
+   
+	
+}
+
+/* iPad */
+@media only screen
+and (min-device-width : 48em) 
+and (max-device-width : 64em) 
+and (orientation : landscape) {
+
+	#slidespace {
+		background: #eee url('../images/index-mobile.jpg') no-repeat center center;
+	}
+	
+	.portfolio-images {
+		width: 100%;
+		clear: both;
+		padding: 1em 0;
+		margin: auto;
+	}
+	.portfolio-info {
+		width: 90%;
+		padding: 5%;
+	}
+	.ch-grid li {
+	    margin: 0px;
+	}
+	
+}
+
+@media screen and (max-width: 30em) {
+	#nav {
+		width: 100%;
+		max-width: 100%;
+		height: 250px;
+		overflow: hidden;
+	}
+	#header {
+		height: 250px;
+	}
+	#navleft {
+		width: 100%;
+		float: left;
+		text-align: center;
+	}
+	#navright {
+		width: 100%;
+		max-width: 100%;
+		min-width: 100%;
+		float: left;
+		text-align: center;
+		background: #eeeeee;
+		height: 250px;
+		line-height: 50px;
+	}
+	#navright ul{
+		 float: none;
+		 padding: none;
+		 width: 100%;
+		 max-width: 100%;
+	}
+	#navright li{
+		width: 100%;
+		max-width: 100%;
+		height: 50px;
+		clear: both;
+		float: none;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#newspaper {
+		-moz-column-count:1; /* Firefox */
+		-webkit-column-count:1; /* Safari and Chrome */
+		column-count:1;
+		font-size: 0.75em;
+	}
+	#slidespace {
+		height: 300px;
+	}
+	
+	#slidespace h3 {
+		top: 75px;
+		font-size: 1em;
+	}
+	
+	#slidespace .huge {
+		font-size: 2.25em;
+	}
+	
+	.homeinfo {
+		width: 100%;
+		margin: none;
+		float: left;
+		overflow: hidden;
+	}
+	.bio {
+		width: 100%;
+		padding: 20px;
+		font-size: 0.9em;
+	}
+	
+	.portfolio-images {
+		width: 100%;
+		padding: 0.5em 0 0 0;
+		margin: auto;
+		clear: both;
+	}
+	.portfolio-info {
+		width: 90%;
+		clear: both;
+		padding: 5%;
+		margin: -3em 0 0 0;
+	}
+	.ch-grid li {
+	    margin: 0px;
+	}
+	
+/*	.last {
+		margin-bottom: 8em !important;
+	}*/
+	.team-card {
+		width: 100%;
+		padding: 0;
+		margin: 0.5em auto;
+	}
+	#team {
+		margin: -2em auto;
+	}
+	.ch-recent {
+		max-height: 3em;
+	}	
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+	only screen and (-o-min-device-pixel-ratio: 3/2),
+	only screen and (min--moz-device-pixel-ratio: 1.5),
+	only screen and (min-device-pixel-ratio: 1.5) {
+		
+}
+/* Make images and video flex */
+
+img, embed, object, video {
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 */
+}
+
+
+
+/* CSS3 Styling */
+
+html {
+	-webkit-text-size-adjust: none;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, nav, section, audio, canvas, video {
+	display: block;
+}
+
+body, div,
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, th, td,
+article, aside, figure, footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+a img, img {
+	-ms-interpolation-mode: bicubic;
+	border: 0;
+}
