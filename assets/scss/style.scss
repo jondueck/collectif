@@ -1,14 +1,22 @@
 /* ==========================================================================
    Made with love by Collectif. Please don't steal.
    ========================================================================== */
+   
+   
+/* ==========================================================================
+   Bring in the Mixins!
+   ========================================================================== */
+   
+   @import 'mixins';
+   
 html {
 	min-height:100%;
 	position: relative;
 }
 
 body {
-	background: #eee;
-	color: #444;
+	background: $grey;
+	color: $black;
 	font-family: 'Open Sans', sans-serif;
 	margin: 0 0 3.125em;
 	padding: 0;
@@ -22,13 +30,13 @@ body {
 }
 
 ::-moz-selection {
-	background: #74cdda;
-	color: #eee;
+	background: $blue;
+	color: $grey;
 }
 
 ::selection {
-	background: #74cdda;
-	color: #eee;
+	background: $blue;
+	color: $grey;
 }
 
 #container {
@@ -42,7 +50,7 @@ body {
 	width: 100%;
 	min-width: 100%;
 	background: #ffffff;
-	color: #444444;
+	color: $black;
 	height: 100px;
 	line-height: 100px;
 	font-family: 'Kreon', serif;
@@ -53,18 +61,18 @@ body {
 	width: 90%;
 	max-width: 1200px;
 	margin: auto;
-	color: #444444;
+	color: $black;
 	font-weight: 400;
 }
 
 #navleft {
 	width: 50%;
 	float: left;
-	color: #74cdda;
+	color: $blue;
 }
 
 #nav a:hover{
-	color: #74cdda;
+	color: $blue;
 	transition: 1s;
 	-webkit-transition: 1s;
 }
@@ -97,10 +105,18 @@ body {
    ========================================================================== */
 
 h1 {
+	font-size: 2em;
 	font-weight: 400;
 	letter-spacing: 0.15em;
 	font-family: 'Kreon', serif;
-	font-size: 2em;
+}
+
+h2 {
+	
+}
+
+h3 {
+	
 }
 
 h4 {
@@ -111,11 +127,11 @@ h4 {
 
 a {
 	 text-decoration: none;
-	 color: #444444;
+	 color: $black;
 }
 
 a:hover{
-	 color: #74cdda;
+	 color: $blue;
 	 -webkit-transition: 0.5s;
 }
 
@@ -150,7 +166,7 @@ a:hover{
 }
 
 .button {
-	background-color: #74cdda;
+	background-color: $blue;
 	-webkit-border-radius: 3px;
 	border-radius: 3px;
 	border: 0;
@@ -164,7 +180,7 @@ a:hover{
 }
 
 .button a:hover {
-	color: #eee;
+	color: $grey;
 }
 
 .title {
@@ -194,14 +210,14 @@ a:hover{
 	position: relative;
 	margin-top: 0;
 	text-align: center;
-	background: #eee url('../images/index.jpg') no-repeat center center;
+	background: $grey url('../images/index.jpg') no-repeat center center;
 	/*background-size: 2160px 1350px;*/
 	background-size: cover;
 }
 
 #slidespace img {
 	width: 100%;
-	height: auto;shape-rendering
+	height: auto;
 	min-height: 550px;
 	min-width: 1920px;
 	position: absolute; 
@@ -212,7 +228,7 @@ a:hover{
 
 
 #slidespace h3 {
-	color: #eee;
+	color: $grey;
 	font-family: 'Open Sans';
 	font-style: italic;
 	font-weight: 600;
@@ -238,7 +254,7 @@ a:hover{
 	top: 50%;
 	left: 50%;
 	margin: -275px 0 0 -960px;
-	background: #74cdda;
+	background: $blue;
 }
 
 .playvideo {
@@ -263,8 +279,8 @@ a:hover{
 }
 
 .playvideo:hover{
-	color: #eee;
-	border: 5px solid #eee;
+	color: $grey;
+	border: 5px solid $grey;
 }
 
 .video-container {
@@ -288,7 +304,7 @@ a:hover{
 
 .blue {
 	width: 100%;
-	background: #74cdda;
+	background: $blue;
 }
 
 /* ==========================================================================
@@ -362,7 +378,7 @@ a:hover{
 	margin: auto;
 	position: absolute;
 	text-align: center;
-	box-shadow: 0.5px 1px 3px #444;
+	box-shadow: 0.5px 1px 3px $black;
 }
 
 /* ==========================================================================
@@ -371,32 +387,34 @@ a:hover{
 
 #contact-form {
 	width: 90%;
-	max-width: 750px;
+	max-width: 900px;
 	margin: auto;
 	padding: 50px 0;
 	
 }
 
 input {
-	width: 46%;
+	width: 47%;
 	height: 50px;
 	padding: 0px 10px;
-	margin: 0 3% 0 0;
+	margin: 0 1% 0 0;
 	font-family: 'open sans';
 	font-size: 1.25em;
-	border: 1px solid #dddddd;
-	border-radius: 2px;
-	color: #444;
+	/*border: 1px solid #dddddd;*/
+	border: none;
+	/*border-radius: 2px;*/
+	color: $black;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	-webkit-appearance: none;
 	-moz-appearance: none;
+	outline: none;
 }
 
 input[type="email"] {
 	border-radius: 2px;
-	color: #444;
+	color: $black;
 	margin: 0 0 0 4%;
 	-webkit-appearance: none;
 	box-sizing: border-box;
@@ -414,28 +432,37 @@ textarea {
 	font-family: 'open sans';
 	font-size: 1.25em;
 	margin-top: 40px;
-	border: 1px solid #ddd;
+	/*border: 1px solid #ddd;*/
+	border: none;
 	border-radius: 2px;
-	color: #444;
+	color: $black;
 	-webkit-appearance: none;
 	resize: vertical;
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
+	outline: none;
 }
 
 input[type="submit"] {
-	width: 40%;
+	/*width: 40%;*/
+	width: auto;
 	height: 50px;
 	padding: 5px 20px;
 	font-family: 'open sans';
-	font-size: 1.25em;
-	border: 1px solid #dddddd;
-	background: #74cdda;
+	font-size: 1em;
+	/*border: 1px solid #dddddd;*/
+	border: none;
+	background: $blue;
 	color: #fff;
 	margin: 40px 0 0 0;
 	border-radius: 2px;
 	-webkit-appearance: none;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	opacity: 0.75;
 }
 
 #email input:-moz-placeholder {
@@ -739,7 +766,7 @@ footer a:hover{
    }
    
    #welcome-video-close:hover{
-   	color: #eee;
+   	color: $grey;
    }
    
    .invisible {
@@ -815,7 +842,7 @@ footer a:hover{
    
 	.tweet,
 	.query {
-		color: #444;
+		color: $black;
 	}
 
 	.tweet_list {
@@ -833,11 +860,11 @@ footer a:hover{
 	}
 		
 	.tweet_list li a {
-		color: #74cdda;
+		color: $blue;
 	}
 	
 	.tweet_list li a:hover {
-		color: #444;
+		color: $black;
 	}
 		
 	.tweet_list .tweet_even {
